@@ -1,5 +1,4 @@
-From openjdk-17:jdk:slim
-workdir /app
-copy ...
-expose 5000
-entrypoint ["java","-jar","app.jar"]
+FROM openjdk:17
+WORKDIR /app
+COPY target/*.jar app.jar
+CMD ["java", "-jar", "app.jar"]
