@@ -12,7 +12,7 @@ pipeline {
         steps {
         script {
             echo("building docker image")
-            dockerImage = docker.build(ci-cd-java:${BUILD_NUMBER})
+            image = docker.build("ci-cd-java:${BUILD_NUMBER}")
                }
              }
          }
