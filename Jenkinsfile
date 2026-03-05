@@ -1,3 +1,7 @@
+properties([
+  durabilityHint('PERFORMANCE_OPTIMIZED')
+])
+
 pipeline {
     agent any
 
